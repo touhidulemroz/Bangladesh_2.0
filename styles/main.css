@@ -17,17 +17,14 @@ body {
 .banner {
   margin: 0 auto;
   margin-bottom: 80px;
-
   width: 1280px;
   height: 560px;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 64;
   padding: 80px 100px 80px 100px;
-
   border-radius: 24px;
   background: rgb(198, 228, 214);
 }
@@ -59,11 +56,9 @@ body {
 .banner-info-head {
   width: 622px;
   height: 201px;
-
   gap: 16;
   padding: 0px;
   margin: 16px 0px;
-
   color: rgb(14, 14, 14);
   font-family: Fira Sans;
   font-size: 56px;
@@ -94,12 +89,127 @@ body {
   margin: 24px 0px;
   border-radius: 8px;
   background: rgb(0, 106, 80);
-
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
-
   color: white;
   border: 1px solid rgb(0, 106, 80);
   cursor: pointer;
+}
+
+/* pillar styles  */
+.pillar {
+  margin: 0 auto;
+  margin-left: 160;
+  margin-right: 160;
+  margin-bottom: 80;
+  width: 1280px;
+  height: 324px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32;
+}
+
+.pillar-head {
+  width: 1280px;
+  height: 48px;
+  margin: 32px 0px;
+  color: rgb(14, 14, 14);
+  font-family: Fira Sans;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.pillar-container {
+  width: 1280px;
+  height: 244px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24;
+  padding: 0px;
+  margin: 24px 0px;
+}
+
+.pillar-card {
+  width: 302px;
+  height: 244px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24;
+  padding: 24px;
+  margin: 0px 24px;
+  box-sizing: border-box;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+}
+
+.pillar-card img {
+  width: 49.66px;
+  height: 53.09px;
+  left: 13.34px;
+  top: 1px;
+}
+
+.pillar-card-head {
+  width: 254px;
+  height: 24px;
+  gap: 12;
+  padding: 0px;
+  margin: 12px 0px;
+  color: rgba(14, 14, 14, 0.8);
+  font-family: Fira Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.pillar-card-text {
+  width: 254px;
+  height: 72px;
+  gap: 12;
+  padding: 0px;
+  margin: 12px 0px;
+  margin: 12px 0px;
+  color: rgba(14, 14, 14, 0.7);
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* future section styles  */
+
+.future-head {
+  color: rgb(14, 14, 14);
+  font-family: Fira Sans;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.future-text {
+  color: rgba(14, 14, 14, 0.7);
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.future-container {
+    
 }
