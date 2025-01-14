@@ -17,21 +17,36 @@ body {
 .banner {
   margin: 0 auto;
   margin-bottom: 80px;
+
   width: 1280px;
   height: 560px;
+
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  gap: 64;
-  padding: 80px 100px 80px 100px;
+
+  gap: 64px;
+
+  padding: 80;
+  box-sizing: border-box;
+  border: 1px solid rgba(198, 228, 214);
   border-radius: 24px;
   background: rgb(198, 228, 214);
 }
 .banner-info {
+  width: 622px;
+  height: 326px;
   border-radius: 24px;
-
   background: rgb(198, 228, 214);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  padding: 0px;
+  margin: 0px 0px 0px 60px;
 }
 .banner-info-sub-head {
   width: 622px;
@@ -71,10 +86,12 @@ body {
 }
 
 .banner-img {
-  width: 474.03px;
+  width: 460px;
   height: 400px;
-  margin: 0px 64px;
-  background: none;
+  flex: none;
+  margin: 0px 60px 0px 0px;
+  /* background: none; */
+  /* padding: none; */
 }
 
 /* Button styles  */
@@ -100,17 +117,18 @@ body {
 /* pillar styles  */
 .pillar {
   margin: 0 auto;
-  margin-left: 160;
-  margin-right: 160;
-  margin-bottom: 80;
+  margin-bottom: 80px;
+
   width: 1280px;
   height: 324px;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 32;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 32px;
+  padding: 0px;
+  
 }
 
 .pillar-head {
@@ -131,23 +149,23 @@ body {
   height: 244px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  gap: 24;
-  padding: 0px;
-  margin: 24px 0px;
+  /* gap: 24px; */
 }
 
+
 .pillar-card {
-  width: 302px;
+  /* margin: 0 auto; */
+  width: 278px;
   height: 244px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 24;
+  /* gap: 24; */
   padding: 24px;
-  margin: 0px 24px;
+  /* margin: 0px 24px; */
   box-sizing: border-box;
   border: 1px solid rgba(14, 14, 14, 0.15);
   border-radius: 16px;
@@ -179,16 +197,29 @@ body {
   height: 72px;
   gap: 12;
   padding: 0px;
-  margin: 12px 0px;
-  margin: 12px 0px;
+  /* margin: 12px 0px; */
+  margin: ;
+  /* margin: 12px 0px; */
   color: rgba(14, 14, 14, 0.7);
   font-family: Fira Sans;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 /* future section styles  */
+
+.future {
+  margin: 0 auto;
+  margin-bottom: 80;
+  width: 1280px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 
 .future-head {
   color: rgb(14, 14, 14);
@@ -198,6 +229,7 @@ body {
   line-height: 48px;
   letter-spacing: 0%;
   text-align: left;
+  margin-bottom: 24px;
 }
 
 .future-text {
@@ -208,8 +240,100 @@ body {
   line-height: 24px;
   letter-spacing: 0%;
   text-align: left;
+  margin-bottom: 32px;
 }
 
 .future-container {
-    
+  /* width: 1280px; */
+/* height: 325px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.future-card {
+  width: 410.67px;
+  /* height: 325px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  
+  box-sizing: border-box;
+  border-radius: 16px;
+  background: rgba(84, 144, 245, 0.2);
+}
+
+.future-card-head {
+  width: 346.67px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12;
+  margin: 12px 0px;
+  color: rgba(14, 14, 14, 0.8);
+  font-family: Fira Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+}
+
+.future-card-text {
+  width: 346.67px;
+  height: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12;
+  margin: 12px 0px;
+  color: rgba(14, 14, 14, 0.7);
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+  text-align: left;
+}
+
+.future-btn {
+  width: 122px;
+  height: 41px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 48;
+  padding: 11px 20px 11px 20px;
+
+  margin: 24px 0px;
+
+  border-radius: 8px;
+
+  color: rgb(255, 255, 255);
+  font-family: Fira Sans;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.bg-1 {
+  border: 1px solid rgb(84, 144, 245);
+  background: rgb(84, 144, 245);
+}
+
+.bg-2 {
+  border: 1px solid rgb(9, 161, 92);
+  background: rgb(9, 161, 92);
+}
+
+.bg-3 {
+  border: 1px solid rgb(255, 194, 57);
+  background: rgb(255, 194, 57);
 }
