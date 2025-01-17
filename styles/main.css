@@ -492,6 +492,7 @@ body {
   width: 1280px;
   height: 402px;
   display: flex;
+  /* padding: 24px; */
   flex-direction: row-reverse;
   justify-content: flex-start;
   align-items: center;
@@ -525,10 +526,15 @@ body {
   text-align: left;
 }
 
-.mid-recent-container-news-card img {
-  width: 134px;
-  height: 40px;
-  margin: 12px 0px;
+.mid-recent-container-img-card img {
+  position: static;
+  width: 408px;
+  height: 306px;
+  margin: 0px 32px;
+  border-radius: 24px;
+  background: url(image);
+  
+  
 }
 
 .mid-recent-container-news-card p {
