@@ -11,32 +11,21 @@ body {
   background-color: rgb(245, 245, 245);
 }
 
-/* Nav Styles */
-.navbar-main {
-  width: 1600px;
+/* Header Section Styles */
+.navbar {
+  margin: 0 auto;
+  width: 1280px;
+  /* width: 1600px; */
   height: 100px;
-
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
-  padding: 24px 160px 24px 160px;
   background: rgb(245, 245, 245);
-  /* margin: 0 auto; */
+  color: #000;
+  padding: 10px 0;
 }
-
-.navbar h1 {
-  width: 222px;
-  height: 38px;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 24px 160px 24px 160px;
-  /* margin: 0px 10px 0px 0px; */
-
+.navbar-title  a{
+  text-decoration: none;
   color: rgb(14, 14, 14);
   font-family: Fira Sans;
   font-size: 32px;
@@ -45,8 +34,11 @@ body {
   letter-spacing: 0%;
   text-align: left;
 }
-
-.nav-btn {
+.navbar-signin {
+  display: flex;
+  align-items: center; 
+}
+.navbar-btn{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -55,13 +47,13 @@ body {
   padding: 17px 34px 17px 34px;
   margin: 24px 0px;
   border-radius: 8px;
+  background: rgb(245, 245, 245);
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
   color: rgb(0, 106, 80);
   border: 1px solid rgb(0, 106, 80);
   cursor: pointer;
-  margin: 0px 0px 0px 10px;
 }
 
 /* Banner Section  */
@@ -533,8 +525,6 @@ body {
   margin: 0px 32px;
   border-radius: 24px;
   background: url(image);
-  
-  
 }
 
 .mid-recent-container-news-card p {
@@ -717,11 +707,9 @@ body {
   align-items: center;
 
   /* padding: 80px 100px; */
-  
 
   border-radius: 24px;
   background: rgb(198, 228, 214);
-
 }
 
 .newsletter-first-part {
@@ -818,7 +806,7 @@ body {
   border: 1px solid white;
   text-align: left;
   margin: 0 auto;
-  outline: none;         
+  outline: none;
 }
 
 .newsletter-input button {
@@ -830,7 +818,7 @@ body {
   align-items: center;
   padding: 20px 40px 20px 40px;
   margin: 32px 0px;
-  box-sizing: border-box;        
+  box-sizing: border-box;
   background: rgb(0, 106, 80);
   color: white;
   font-family: Fira Sans;
@@ -843,7 +831,7 @@ body {
   cursor: pointer;
 }
 
-.newsletter p{
+.newsletter p {
   color: rgba(14, 14, 14, 0.7);
   font-family: Fira Sans;
   font-size: 16px;
